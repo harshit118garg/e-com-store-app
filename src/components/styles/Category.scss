@@ -1,0 +1,30 @@
+@import "../../sass/mixin";
+@import "../../sass/variables";
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  button {
+    background-color: $yellowColor2;
+    color: $redColor;
+    outline: none;
+    border: none;
+    font-size: $fontSize * 0.6;
+    font-weight: $fontWeight;
+    transition: $transition;
+
+    &:hover {
+      color: $redColor;
+    }
+
+    @media (max-width: 400px) {
+      font-size: $fontSize * 0.4;
+      margin-bottom: 5px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    flex-direction: column;
+  }
+}

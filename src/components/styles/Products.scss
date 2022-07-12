@@ -1,0 +1,19 @@
+@import "../../sass/mixin";
+@import "../../sass/variables";
+
+section {
+  padding-top: 2rem;
+  width: 85vw;
+  margin: auto;
+  margin-bottom: 2rem;
+
+  .heading {
+    h1 {
+      color: $redColor;
+      font-family: $fontFamily;
+      letter-spacing: $spacing;
+      word-spacing: $spacing;
+      position: relative;
+    }
+  }
+}

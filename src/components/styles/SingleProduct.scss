@@ -1,0 +1,29 @@
+@import "../../sass/mixin";
+@import "../../sass/variables";
+
+.container {
+    .itemDetails {
+        width: 80%;
+        margin: auto;
+        .row {
+            .col-md-6 {
+                img {
+                    width: 400px;
+                    height: 500px;
+                    box-shadow: $medium-shadow;
+                }
+                .categoryPill {
+                    border-radius: $radius * 20;
+                    font-weight: $fontWeight;
+                    letter-spacing: $spacing;
+                    text-transform: uppercase;
+                    padding: 10px;
+                    text-align: center;
+                    background-color: $yellowColor2;
+                    font-family: $fontFamily;
+                    color: $redColor;
+                }
+            }
+        }
+    }
+}
