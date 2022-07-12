@@ -10,7 +10,7 @@ const Products = () => {
   const [categoryItems, setCategoryItems] = useState(data);
   const [loading, setLoading] = useState(false);
 
-  function getProducts() {
+  const getProducts = () => {
     setLoading(true);
     axios
       .get(`https://fakestoreapi.com/products`)
@@ -22,7 +22,7 @@ const Products = () => {
       .catch((err) => {
         console.log(err);
       });
-  }
+  };
 
   useEffect(() => {
     getProducts();
@@ -37,8 +37,12 @@ const Products = () => {
     ];
     return (
       <>
-        <Category categoriesArray={categoriesArray} data={data} setCategoryItems={setCategoryItems} />
-        <ProductCards categoryItems={categoryItems}/>
+        <Category
+          categoriesArray={categoriesArray}
+          data={data}
+          setCategoryItems={setCategoryItems}
+        />
+        <ProductCards categoryItems={categoryItems} />
       </>
     );
   };
